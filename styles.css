@@ -161,6 +161,7 @@ a {
   object-fit: contain;
 }
 .section-portfolio {
+  padding: 20px;
   margin-top: 100px;
   border: 1px solid #7b4ae280;
 }
