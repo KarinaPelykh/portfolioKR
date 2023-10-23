@@ -151,7 +151,7 @@ a {
   color: #7b4ae2;
 }
 .foto {
-  width: 300px;
+  width: 280px;
   height: 200px;
   object-fit: cover;
 }
@@ -179,8 +179,8 @@ a {
 .wrap-portfolio {
   border: 1px solid #7b4ae280;
   border-radius: 16px;
-  width: 320px;
-  height: 460px;
+  width: 300px;
+  height: 440px;
   padding: 10px;
   margin-bottom: 20px;
 }
