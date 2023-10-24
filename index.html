@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -20,7 +32,6 @@
           <li class="item-link"><a href="#Home">Home</a></li>
           <li class="item-link"><a href="#Portfolio">Portfolio</a></li>
           <li class="item-link"><a href="#Skils">Skils</a></li>
-
           <li class="item-link"><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
@@ -28,7 +39,7 @@
     <main>
       <section class="section-home">
         <article class="info-portfolio">
-          <h1 class="title">👋 Hello!</h1>
+          <h1 class="title"><span class="emoji">👋 </span>Hello!</h1>
           <h2 class="name">Pelykh Karina</h2>
           <h3 class="pozition">Front-end developer</h3>
           <ul class="list">
@@ -59,13 +70,13 @@
           </ul>
         </article>
         <div class="wrapper">
-          <img class="images" src="./images/photo2.jpg" />
+          <img class="images" src="./images/photo2.jpg" alt="" />
         </div>
 
         <div>
           <ul>
             <li class="item-contact">
-              <a href="mailto: karinahasenko71@gmail.com"
+              <a href="mailto:karinahasenko71@gmail.com"
                 >karinahasenko71@gmail.com</a
               >
             </li>
@@ -108,13 +119,14 @@
       </section>
 
       <section class="section-portfolio">
-        <h1 class="portfolio-title" id="Portfolio">Portfolio</h1>
+        <h1 class="portfolio-title" id="Portfolio">🔗Portfolio</h1>
         <ul class="list-portfolio">
           <li class="item-portfolio">
             <div class="wrap-portfolio">
               <p class="portfolio-text">React + Node.js</p>
-
-              <img class="foto" src="./images/youp-pet.png" />
+              <p class="portfolio-description">Role: Scrum</p>
+              <p class="portfolio-description">GoIt team project</p>
+              <img class="foto" src="./images/youp-pet.png" alt="" />
               <a
                 class="portfolio-link"
                 target="_blank"
@@ -126,8 +138,9 @@
           <li class="item-portfolio">
             <div class="wrap-portfolio">
               <p class="portfolio-text">Java Script</p>
-
-              <img class="foto" src="./images/bookshelf.png" />
+              <p class="portfolio-description">Role: Developer</p>
+              <p class="portfolio-description">GoIt team project</p>
+              <img class="foto" src="./images/bookshelf.png" alt="" />
               <a
                 class="portfolio-link"
                 target="_blank"
@@ -136,12 +149,26 @@
               >
             </div>
           </li>
-
+          <li class="item-portfolio">
+            <div class="wrap-portfolio">
+              <p class="portfolio-text">HTML+SCC</p>
+              <p class="portfolio-description">Role: Developer</p>
+              <p class="portfolio-description">GoIt team project</p>
+              <img class="foto" src="./images/thewatchspot.png" alt="" />
+              <a
+                class="portfolio-link"
+                target="_blank"
+                href="https://vyachuk.github.io/just-do-it/"
+                >Thewatchspot</a
+              >
+            </div>
+          </li>
           <li class="item-portfolio">
             <div class="wrap-portfolio">
               <p class="portfolio-text">React Native</p>
-
-              <img class="foto-1" src="./images/react-native.jpg" />
+              <p class="portfolio-description">Role: Developer</p>
+              <p class="portfolio-description">GoIt My project</p>
+              <img class="foto-1" src="./images/react-native.jpg" alt="" />
               <a
                 class="portfolio-link"
                 target="_blank"
@@ -153,9 +180,10 @@
           </li>
           <li class="item-portfolio">
             <div class="wrap-portfolio">
-              <p class="portfolio-text">Html + Css</p>
-
-              <img class="foto" src="./images/webstudio.png" />
+              <p class="portfolio-text">HTML + Css</p>
+              <p class="portfolio-description">Role: Developer</p>
+              <p class="portfolio-description">GoIt My project</p>
+              <img class="foto" src="./images/webstudio.png" alt="" />
               <a
                 class="portfolio-link"
                 target="_blank"
@@ -168,7 +196,7 @@
       </section>
 
       <section class="section-portfolio">
-        <h1 class="portfolio-title" id="Skils">Skils</h1>
+        <h1 class="portfolio-title" id="Skils">🔗Skils</h1>
         <p class="skils-text">Technologies and skills</p>
         <ul class="skils-list">
           <li class="skils-item">
@@ -202,7 +230,7 @@
             </svg>
           </li>
           <li class="skils-item">
-            <img class="skils-svg" src="./images/stylCom.png" />
+            <img class="skils-svg" src="./images/stylCom.png" alt="" />
           </li>
 
           <li class="skils-item">
@@ -228,8 +256,38 @@
         </ul>
       </section>
 
-      <section>
-        <h1 id="Contact">Contact</h1>
+      <section class="section-contact">
+        <h1 class="contact-title" id="Contact">🔗Contact</h1>
+        <div class="contact-wrap">
+          <form class="form">
+            <label class="label">
+              Email
+              <input type="email" name="email" autofocus />
+            </label>
+            <label class="label">
+              Commentar
+              <textarea></textarea>
+            </label>
+
+            <button class="button" type="submit">Submit</button>
+          </form>
+
+          <div class="contact-wrapper">
+            <ul>
+              <li class="item-contact">
+                <a href="mailto:karinahasenko71@gmail.com"
+                  >pelihkarina0@gmail.com</a
+                >
+              </li>
+              <li class="item-contact">
+                <a href="tel:+420776625657"> Tel-cz: +420776625657</a>
+              </li>
+              <li class="item-contact">
+                <a href="tel:+380509405829">Tel-uk: +380509405829</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
