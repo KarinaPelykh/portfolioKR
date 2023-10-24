@@ -1,8 +1,12 @@
 body {
   color: white;
   background-color: black;
-
   margin-top: 40px;
+}
+@media (max-width: 376px) {
+  body {
+    margin: 0;
+  }
 }
 /* Reset */
 h1,
@@ -75,9 +79,15 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 @media (max-width: 376px) {
   .navigaton {
     display: none;
+  }
+}
+@media screen and (max-width: 1157px) and (min-width: 320px) {
+  .nav-link {
+    font-size: 15px;
   }
 }
 .logo-link {
@@ -135,6 +145,11 @@ a:hover {
   }
 }
 
+@media (max-width: 376px) {
+  .section-home {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 1157px) and (min-width: 320px) {
   .info-portfolio {
     margin-right: 0;
@@ -475,8 +490,12 @@ a:hover {
   list-style: none;
   justify-content: center;
 }
+
 .svg-footer {
   width: 40px;
   height: 40px;
+}
+
+.footer-item {
   margin-right: 30px;
 }
