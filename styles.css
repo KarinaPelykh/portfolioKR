@@ -37,15 +37,54 @@ a:hover {
   -webkit-text-stroke: transparent;
 }
 /* Reset */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* width: 1158px;
+
+   
+outline: solid tomato 2px; */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .header {
   background-color: #6628ec7c;
   border-radius: 20px;
+}
+
+@media (max-width: 376px) {
+  .header {
+    background-color: transparent;
+  }
 }
 .navigaton {
   padding: 12px 24px 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 376px) {
+  .navigaton {
+    display: none;
+  }
 }
 .logo-link {
   width: 40px;
@@ -101,9 +140,9 @@ a:hover {
     padding: 40px;
   }
 }
-.info-portfolio {
+/* .info-portfolio {
   margin-right: 143px;
-}
+} */
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .info-portfolio {
     margin-right: 0;
@@ -140,8 +179,8 @@ a:hover {
   margin-right: 143px;
 }
 .images {
-  width: 510px;
-  height: 510px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
@@ -167,11 +206,17 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 }
 .wrapp {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+}
+@media (max-width: 376px) {
+  .wrapp {
+    display: block;
+  }
 }
 .bloc {
   text-align: center;
@@ -185,6 +230,13 @@ a:hover {
   .bloc {
     width: 180px;
     margin-right: 40px;
+  }
+}
+@media (max-width: 376px) {
+  .bloc {
+    width: 180px;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 .bloc:last-child {
@@ -219,6 +271,14 @@ a:hover {
 .thumb-div {
   margin-right: 120px;
 }
+
+@media (max-width: 376px) {
+  .thumb-div {
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
 .thumb-div:last-child {
   margin-right: 0;
 }
@@ -231,6 +291,12 @@ a:hover {
     font-size: 25px;
   }
 }
+@media (max-width: 376px) {
+  .thumb-title {
+    font-size: 15px;
+  }
+}
+
 .thumb-text {
   text-align: center;
   color: #7b4ae2;
@@ -246,16 +312,27 @@ a:hover {
 .foto:hover {
   transform: scale(1.5);
 }
+@media (max-width: 376px) {
+  .foto {
+    width: 250px;
+  }
+}
 .foto-1 {
   margin-bottom: 20px;
   width: 300px;
   height: 200px;
   object-fit: contain;
 }
+@media (max-width: 376px) {
+  .foto-1 {
+    width: 250px;
+  }
+}
 .foto-1:hover {
   transition-duration: 250ms;
   transform: scale(1.5);
 }
+
 .section-portfolio {
   padding: 20px;
   margin-top: 100px;
@@ -283,6 +360,12 @@ a:hover {
     grid-template-rows: repeat(2, 440px);
   }
 }
+@media (max-width: 376px) {
+  .list-portfolio {
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(2, 440px);
+  }
+}
 .wrap-portfolio {
   border: 1px solid #7b4ae233;
   border-radius: 16px;
@@ -290,6 +373,12 @@ a:hover {
   height: 440px;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 376px) {
+  .wrap-portfolio {
+    width: 280px;
+  }
 }
 .portfolio-description {
   text-align: center;
@@ -332,6 +421,13 @@ a:hover {
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .skils-list {
     grid-template-columns: repeat(2, 200px);
+  }
+}
+@media (max-width: 376px) {
+  .skils-list {
+    grid-template-columns: repeat(2, 115px);
+    margin-left: 0;
+    margin-right: -26px;
   }
 }
 .skils-item {
