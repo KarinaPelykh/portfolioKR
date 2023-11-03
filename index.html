@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg"  href="./images/icon.svg#Logo"/>
+    <link rel="icon" type="image/png"  href="./images/Logo.png"/>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,31 +35,32 @@
           <li class="item-link"><a  class="nav-link" href="#Portfolio">Portfolio</a></li>
           <li class="item-link"><a class="nav-link"  href="#Skils">Skils</a></li>
           <li class="item-link"><a  class="nav-link" href="#Other skils">Other skils</a></li>
+          <li class="item-link"><a  class="nav-link" href="#Contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <section class="section-home">
+      <section class="section-home" id="Home">
         <article class="info-portfolio">
           <h1 class="title"><span class="emoji">👋 </span>Hello!</h1>
           <h2 class="name">Pelykh Karina</h2>
           <h3 class="pozition">Front-end developer</h3>
           <ul class="list">
-            <li class="item-link">
+            <li class="item-link-media">
               <a href="https://t.me/karinapelykh" target="_blank">
                 <svg class="svg-contact">
                   <use href="./images/icon.svg#telegram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-link">
+            <li class="item-link-media">
               <a href="https://github.com/KarinaPelykh" target="_blank">
                 <svg class="svg-contact">
                   <use href="./images/icon.svg#github"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-link">
+            <li class="item-link-media">
               <a
                 href="https://www.linkedin.com/in/karyna-pelykh/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
@@ -71,28 +73,13 @@
           </ul>
         </article>
         <div class="wrapper">
-          <img class="images" src="./images/photo2.jpg" alt="" />
+          <img class="images" src="./images/my-photo.jpg" alt="" />
         </div>
-
-        <div>
-          <ul>
-            <li class="item-contact">
-              <a href="mailto:karinahasenko71@gmail.com"
-                >karinahasenko71@gmail.com</a
-              >
-            </li>
-            <li class="item-contact">
-              <a href="tel:+420776625657"> Tel-cz: +420776625657</a>
-            </li>
-            <li class="item-contact">
-              <a href="tel:+380509405829">Tel-uk: +380509405829</a>
-            </li>
-            <li class="fals-button">
-              <a target="_blank"  class="link-site"  href="https://drive.google.com/file/d/1RjPSO9BJ-nr_NniNmmvB2TZ9RauuXbtY/view" >CV<svg class="svg-contact"><use href="./images/icon.svg#icon-download"></use></svg></a>
-          
-            </li>
-          </ul>
-        </div>
+<div class="text-Me">
+  <h2>About me</h2>
+  <p>I am a junior Frontend Developer. I am a very positive and communicative person. I'm always ready to work and learn something new. I have experience with HTML, CSS, JavaScript, React, Redux, React Native, Node.js, and MongoDB. I want to improve, and I am open to work </p>
+</div>
+       
       </section>
       <section class="section-expir">
         <div class="wrapp">
@@ -121,6 +108,7 @@
             <p class="thumb-title">Experience</p>
           </div>
         </div>
+        <button class="scrol"><a href="#Home"><svg class="svg-scrol"><use href="./images/icon.svg#Logo"></use></svg></a></button>
       </section>
 
       <section class="section-portfolio">
@@ -261,7 +249,7 @@
         </ul>
       </section>
       <section class="section-contact" >
-        <h1 class="contact-title" id="Other skils">Other skils</h1>
+        <h1 class="contact-title" id="Other skils">🔗Other skils</h1>
           <div class="contact-wrapper">
             <ul>
               <li class="item-skils">
@@ -275,6 +263,27 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+        <section class="section-contact" >
+        <h1 class="contact-title" id="Other skils">🔗Contact</h1>
+           <div  class="contact-wrapper">
+          <ul>
+            <li class="item-contact">
+              <a href="mailto:karinahasenko71@gmail.com"
+                >karinahasenko71@gmail.com</a
+              >
+            </li>
+            <li class="item-contact">
+              <a href="tel:+420776625657"> Tel-cz: +420776625657</a>
+            </li>
+            <li class="item-contact">
+              <a href="tel:+380509405829">Tel-uk: +380509405829</a>
+            </li>
+            <button class="button"><a target="_blank" href="https://drive.google.com/file/d/1RjPSO9BJ-nr_NniNmmvB2TZ9RauuXbtY/view" >CV</a></button>
+
+          </ul>
+        </div>
         </div>
       </section>
     </main>
